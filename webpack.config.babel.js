@@ -22,19 +22,19 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                loaders: ['react-hot-loader/webpack', 'babel-loader']
+                loaders: ['react-hot-loader/webpack', 'babel-loader'],
             },
             {
                 test: /\.scss$/,
                 exclude: /node_modules/,
-                loaders: ['style-loader', 'css-loader', 'sass-loader']
+                loaders: ['style-loader', 'css-loader', 'sass-loader'],
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'KanbanThat',
-            template: 'src/index.html'
+            template: 'src/index.html',
         }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),

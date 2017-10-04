@@ -4,8 +4,9 @@
   "description": "kanban board, with react + mobx + firebase stack",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build-prod": "NODE_ENV=production webpack -p"
+    "dev": "webpack-dev-server --hot --inline",
+    "build-prod": "NODE_ENV=production webpack -p",
+    "lint": "eslint src"
   },
   "keywords": [
     "kanban",
@@ -17,11 +18,18 @@
   "author": "Dan Yakovlev <dan23yakovlev@gmail.com> (http://github.com/danYakovlev)",
   "devDependencies": {
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.0.5",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
     "html-webpack-plugin": "^2.30.1",
     "mobx-react-devtools": "^4.2.15",
     "react-hot-loader": "^3.0.0-beta.7",
