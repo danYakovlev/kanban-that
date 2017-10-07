@@ -1,12 +1,13 @@
 {
     "parser": "babel-eslint",
     "extends": ["airbnb"],
-    "plugins": [
-        "react",
-        "jsx-a11y",
-        "import"
-    ],
     "rules": {
-        "max-len": [1, 150, 1, {"ignoreComments": true}]
+        "max-len": ["error", 150],
+        "indent": ["error", 4],
+        "experementalDecorators": 0,
+        
+        // react
+        "react/jsx-indent": ["error", 4],
+        "react/jsx-filename-extension": 0
     }
 }
