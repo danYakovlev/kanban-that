@@ -6,7 +6,7 @@
     },
     "extends": ["airbnb"],
     "rules": {
-        "max-len": ["error", 150],
+        "max-len": ["error", 125],
         "indent": ["error", 4],
 
         "arrow-parens": ["error", "as-needed"],
