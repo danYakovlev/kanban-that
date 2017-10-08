@@ -6,14 +6,14 @@ import App from './App';
 
 const rootElement = document.getElementById('root');
 
-const renderApp = Component => {
+const renderApp = Component =>
     render(
         <AppContainer>
             <Component />
         </AppContainer>,
         rootElement,
     );
-};
+
 
 renderApp(App);
 
