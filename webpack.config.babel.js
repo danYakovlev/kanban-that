@@ -2,6 +2,8 @@ import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
+
+// eslint-disable-next-line
 const isProd = (process.env.NODE_ENV === 'production');
 
 module.exports = {
@@ -13,7 +15,7 @@ module.exports = {
     ],
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname + '/dist'),
+        path: path.resolve(__dirname, '/dist'),
         publicPath: '/',
     },
     devtool: 'inline-source-map',
@@ -28,8 +30,8 @@ module.exports = {
                 test: /\.scss$/,
                 exclude: /node_modules/,
                 loaders: ['style-loader', 'css-loader', 'sass-loader'],
-            }
-        ]
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -45,5 +47,5 @@ module.exports = {
         port: 3000,
         historyApiFallback: true,
         hot: true,
-    }
-}
+    },
+};

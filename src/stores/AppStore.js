@@ -1,7 +1,6 @@
-import { observable, action, computed } from 'mobx';
+import { observable } from 'mobx';
 
 class AppStore {
-
     @observable appName;
 
     constructor(appName = '') {

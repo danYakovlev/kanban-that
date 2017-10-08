@@ -7,10 +7,10 @@ import stores from './stores/index';
 class App extends Component {
     render() {
         return (
-            <Provider { ...stores }>
+            <Provider {...stores} >
                 <DevTools />
             </Provider>
-        )
+        );
     }
 }
 

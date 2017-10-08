@@ -11,9 +11,9 @@ const renderApp = Component => {
         <AppContainer>
             <Component />
         </AppContainer>,
-        rootElement    
+        rootElement,
     );
-}
+};
 
 renderApp(App);
 
