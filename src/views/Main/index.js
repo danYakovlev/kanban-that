@@ -6,8 +6,9 @@ import styles from './styles.scss';
 
 const Main = () => (
     <div styleName="Main">
-        <Button raised color="primary">
-            Main
+        {/*Coming soon...*/}
+        <Button color="contrast">
+            Try it
         </Button>
     </div>
 );

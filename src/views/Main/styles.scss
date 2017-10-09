@@ -1,5 +1,12 @@
 .Main {
     width: 100%;
     height: 100%;
-    background-color: rgb(53, 53, 53);
+    background: radial-gradient(circle 700px at top center, #1e7286, #283e5a);
+    /*background: radial-gradient(circle 700px at top center, #088588, #1e4663);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 100;
+    color: rgba(255,255,255,.2);
 }
