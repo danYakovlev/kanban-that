@@ -4,9 +4,25 @@
     background: radial-gradient(circle 700px at top center, #1e7286, #283e5a);
     /*background: radial-gradient(circle 700px at top center, #088588, #1e4663);*/
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 40px;
     font-weight: 100;
     color: rgba(255,255,255,.2);
+
+
+    .logo{
+        background-image: url(./assets/logo.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 25px;
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
+
