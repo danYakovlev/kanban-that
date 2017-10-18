@@ -1,3 +1,9 @@
 .Board {
     display: block;
+
+    .control {
+        position: fixed;    
+        margin-left: calc(100% - 80px);
+        margin-top: calc(100% - 300px);
+    }
 }

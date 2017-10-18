@@ -1,0 +1,11 @@
+.BoardColumn {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 200px;
+
+    .title {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
