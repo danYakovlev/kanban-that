@@ -9,7 +9,7 @@ class BoardColumn extends Component {
         const { title } = this.props;
 
         return (
-            <div styleName="BoardColumn">
+            <div ref={this.props.refProp} styleName="BoardColumn">
                 <div styleName="title">
                     { title || '' }
                 </div>

@@ -1,9 +1,15 @@
 .Board {
     display: block;
+    width: 100%;
+    height: 100%;
 
     .control {
         position: fixed;    
         margin-left: calc(100% - 80px);
-        margin-top: calc(100% - 300px);
+        margin-top: calc(100% - 140px);
+    }
+
+    .board-columns {
+        display: flex;
     }
 }

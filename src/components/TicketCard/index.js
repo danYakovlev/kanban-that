@@ -8,7 +8,7 @@ class TicketCard extends Component {
     render() {
         return (
             <div styleName="TicketCard">
-                Ticket card
+                { this.props.children }
             </div>
         );
     }
